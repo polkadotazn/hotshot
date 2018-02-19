@@ -18,7 +18,6 @@
 		59F8BEBB203A3DCD00925BF1 /* HotShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8BEBA203A3DCD00925BF1 /* HotShotTests.swift */; };
 		59F8BEC6203A3DCD00925BF1 /* HotShotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8BEC5203A3DCD00925BF1 /* HotShotUITests.swift */; };
 		9BECA9C02539EFE4830472E1 /* Pods_HotShotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA0459F1A2C4BB56DE4860C /* Pods_HotShotTests.framework */; };
-		DE3DC8D3203A52A90036F18E /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = DE3DC8D2203A52A90036F18E /* GoogleService-Info (1).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		67F2D217F70FE1B4F88F1414 /* Pods-HotShotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShotUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotShotUITests/Pods-HotShotUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D195D627E69F9814A871DA56 /* Pods-HotShot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotShot/Pods-HotShot.debug.xcconfig"; sourceTree = "<group>"; };
 		DD55D69D154E82F025DEDAC3 /* Pods-HotShot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShot.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotShot/Pods-HotShot.release.xcconfig"; sourceTree = "<group>"; };
-		DE3DC8D2203A52A90036F18E /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = SOURCE_ROOT; };
 		DE3DC8D4203A55D50036F18E /* HotShot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HotShot.entitlements; sourceTree = "<group>"; };
 		E3B202D063DEF4BDCAA60CEC /* Pods_HotShotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotShotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D18F67236FC8C296C18CE /* Pods_HotShot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotShot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,7 +132,6 @@
 			children = (
 				DE3DC8D4203A55D50036F18E /* HotShot.entitlements */,
 				59F8BEA3203A3DCD00925BF1 /* AppDelegate.swift */,
-				DE3DC8D2203A52A90036F18E /* GoogleService-Info (1).plist */,
 				59F8BEA5203A3DCD00925BF1 /* FirstViewController.swift */,
 				59F8BEA7203A3DCD00925BF1 /* SecondViewController.swift */,
 				59F8BEA9203A3DCD00925BF1 /* Main.storyboard */,
@@ -303,7 +300,6 @@
 				59F8BEB0203A3DCD00925BF1 /* LaunchScreen.storyboard in Resources */,
 				59F8BEAD203A3DCD00925BF1 /* Assets.xcassets in Resources */,
 				59F8BEAB203A3DCD00925BF1 /* Main.storyboard in Resources */,
-				DE3DC8D3203A52A90036F18E /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
