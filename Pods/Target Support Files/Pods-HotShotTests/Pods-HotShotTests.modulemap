@@ -1,0 +1,6 @@
+framework module Pods_HotShotTests {
+  umbrella header "Pods-HotShotTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
