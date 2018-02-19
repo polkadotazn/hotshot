@@ -1,14 +1,3 @@
-- technologies
-- name
-- wireframes
--AVFoundation
--firebase
--Swift
--Xcode
--Aws
-
-https://github.com/rizwankce/Camera/
-
 # Hot Shot
 #### A phone app for sharing events and moments in your area
 ## Background and Overview
@@ -67,4 +56,4 @@ We finished the wireframes, got more familiar with our new technologies, set up 
 #### Day 6
 * About me
 * Improve look and feel of app
-* Location-based 
+* Location-based
