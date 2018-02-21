@@ -11,14 +11,15 @@
 		2256E946203DEA2A0046B2CF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E945203DEA2A0046B2CF /* MapViewController.swift */; };
 		2256E948203DEA6B0046B2CF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E947203DEA6B0046B2CF /* CameraViewController.swift */; };
 		2256E94A203DEA8B0046B2CF /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E949203DEA8B0046B2CF /* ExploreViewController.swift */; };
-		2260FCAF203C94D80018E6EA /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCAA203C94D80018E6EA /* Search.png */; };
-		2260FCB0203C94D80018E6EA /* Feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCAB203C94D80018E6EA /* Feed.png */; };
-		2260FCB1203C94D80018E6EA /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCAC203C94D80018E6EA /* Camera.png */; };
-		2260FCB2203C94D80018E6EA /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCAD203C94D80018E6EA /* Map.png */; };
-		2260FCB3203C94D80018E6EA /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCAE203C94D80018E6EA /* Profile.png */; };
-		2260FCB6203C971D0018E6EA /* Feed-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCB4203C971D0018E6EA /* Feed-25.png */; };
-		2260FCB7203C971D0018E6EA /* Search-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCB5203C971D0018E6EA /* Search-25.png */; };
 		2260FCB9203CAF350018E6EA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2260FCB8203CAF350018E6EA /* FeedViewController.swift */; };
+		22AC0586203DF7DB008EC7D0 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC057F203DF7DA008EC7D0 /* Search.png */; };
+		22AC0587203DF7DB008EC7D0 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC0580203DF7DA008EC7D0 /* Camera.png */; };
+		22AC0588203DF7DB008EC7D0 /* Feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC0581203DF7DA008EC7D0 /* Feed.png */; };
+		22AC0589203DF7DB008EC7D0 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC0582203DF7DB008EC7D0 /* Map.png */; };
+		22AC058A203DF7DB008EC7D0 /* Feed-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC0583203DF7DB008EC7D0 /* Feed-25.png */; };
+		22AC058B203DF7DB008EC7D0 /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC0584203DF7DB008EC7D0 /* Profile.png */; };
+		22AC058C203DF7DB008EC7D0 /* Search-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC0585203DF7DB008EC7D0 /* Search-25.png */; };
+		22AC058E203DFA36008EC7D0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AC058D203DFA36008EC7D0 /* Secrets.swift */; };
 		5A367B5B39DA9769141B03AE /* Pods_HotShotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FDD8FE293BBF8D1FFAE49D /* Pods_HotShotTests.framework */; };
 		6392AE36A907F4B9FE441379 /* Pods_HotShotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F9A9B29BBB797F26DB202E /* Pods_HotShotUITests.framework */; };
 		8EBB2249FA12CA2EA5301591 /* Pods_HotShot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F45CE88CA1F7A67197934D6 /* Pods_HotShot.framework */; };
@@ -55,14 +56,15 @@
 		2256E945203DEA2A0046B2CF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2256E947203DEA6B0046B2CF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		2256E949203DEA8B0046B2CF /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
-		2260FCAA203C94D80018E6EA /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Search.png; path = ../../../iphone_icons/Search.png; sourceTree = "<group>"; };
-		2260FCAB203C94D80018E6EA /* Feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Feed.png; path = ../../../iphone_icons/Feed.png; sourceTree = "<group>"; };
-		2260FCAC203C94D80018E6EA /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camera.png; path = ../../../iphone_icons/Camera.png; sourceTree = "<group>"; };
-		2260FCAD203C94D80018E6EA /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Map.png; path = ../../../iphone_icons/Map.png; sourceTree = "<group>"; };
-		2260FCAE203C94D80018E6EA /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Profile.png; path = ../../../iphone_icons/Profile.png; sourceTree = "<group>"; };
-		2260FCB4203C971D0018E6EA /* Feed-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feed-25.png"; path = "../../../iphone_icons/Feed-25.png"; sourceTree = "<group>"; };
-		2260FCB5203C971D0018E6EA /* Search-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Search-25.png"; path = "../../../iphone_icons/Search-25.png"; sourceTree = "<group>"; };
 		2260FCB8203CAF350018E6EA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		22AC057F203DF7DA008EC7D0 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
+		22AC0580203DF7DA008EC7D0 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera.png; sourceTree = "<group>"; };
+		22AC0581203DF7DA008EC7D0 /* Feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed.png; sourceTree = "<group>"; };
+		22AC0582203DF7DB008EC7D0 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		22AC0583203DF7DB008EC7D0 /* Feed-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feed-25.png"; sourceTree = "<group>"; };
+		22AC0584203DF7DB008EC7D0 /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile.png; sourceTree = "<group>"; };
+		22AC0585203DF7DB008EC7D0 /* Search-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-25.png"; sourceTree = "<group>"; };
+		22AC058D203DFA36008EC7D0 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		288189FF6FA63234F058FB13 /* Pods-HotShot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotShot/Pods-HotShot.debug.xcconfig"; sourceTree = "<group>"; };
 		3F45CE88CA1F7A67197934D6 /* Pods_HotShot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotShot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8144611C4274571D2586B21F /* Pods-HotShot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShot.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotShot/Pods-HotShot.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,13 +120,13 @@
 		2260FCA9203C94890018E6EA /* IconImages */ = {
 			isa = PBXGroup;
 			children = (
-				2260FCB4203C971D0018E6EA /* Feed-25.png */,
-				2260FCB5203C971D0018E6EA /* Search-25.png */,
-				2260FCAC203C94D80018E6EA /* Camera.png */,
-				2260FCAB203C94D80018E6EA /* Feed.png */,
-				2260FCAD203C94D80018E6EA /* Map.png */,
-				2260FCAE203C94D80018E6EA /* Profile.png */,
-				2260FCAA203C94D80018E6EA /* Search.png */,
+				22AC0580203DF7DA008EC7D0 /* Camera.png */,
+				22AC0583203DF7DB008EC7D0 /* Feed-25.png */,
+				22AC0581203DF7DA008EC7D0 /* Feed.png */,
+				22AC0582203DF7DB008EC7D0 /* Map.png */,
+				22AC0584203DF7DB008EC7D0 /* Profile.png */,
+				22AC0585203DF7DB008EC7D0 /* Search-25.png */,
+				22AC057F203DF7DA008EC7D0 /* Search.png */,
 			);
 			path = IconImages;
 			sourceTree = "<group>";
@@ -167,6 +169,7 @@
 				2256E945203DEA2A0046B2CF /* MapViewController.swift */,
 				2256E947203DEA6B0046B2CF /* CameraViewController.swift */,
 				2256E949203DEA8B0046B2CF /* ExploreViewController.swift */,
+				22AC058D203DFA36008EC7D0 /* Secrets.swift */,
 			);
 			path = HotShot;
 			sourceTree = "<group>";
@@ -328,17 +331,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2260FCB2203C94D80018E6EA /* Map.png in Resources */,
+				22AC0589203DF7DB008EC7D0 /* Map.png in Resources */,
+				22AC058A203DF7DB008EC7D0 /* Feed-25.png in Resources */,
 				9E00F11A203B96AD00F5088D /* LaunchScreen.storyboard in Resources */,
 				9E00F13E203B97EB00F5088D /* GoogleService-Info.plist in Resources */,
 				9E00F117203B96AD00F5088D /* Assets.xcassets in Resources */,
-				2260FCB3203C94D80018E6EA /* Profile.png in Resources */,
-				2260FCB1203C94D80018E6EA /* Camera.png in Resources */,
-				2260FCB6203C971D0018E6EA /* Feed-25.png in Resources */,
-				2260FCB7203C971D0018E6EA /* Search-25.png in Resources */,
-				2260FCB0203C94D80018E6EA /* Feed.png in Resources */,
-				2260FCAF203C94D80018E6EA /* Search.png in Resources */,
+				22AC0586203DF7DB008EC7D0 /* Search.png in Resources */,
+				22AC0587203DF7DB008EC7D0 /* Camera.png in Resources */,
+				22AC058C203DF7DB008EC7D0 /* Search-25.png in Resources */,
+				22AC0588203DF7DB008EC7D0 /* Feed.png in Resources */,
 				9E00F115203B96AD00F5088D /* Main.storyboard in Resources */,
+				22AC058B203DF7DB008EC7D0 /* Profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +452,8 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
@@ -460,6 +465,8 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
@@ -567,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E00F112203B96AD00F5088D /* ViewController.swift in Sources */,
+				22AC058E203DFA36008EC7D0 /* Secrets.swift in Sources */,
 				2260FCB9203CAF350018E6EA /* FeedViewController.swift in Sources */,
 				2256E944203D0CF70046B2CF /* ProfileViewController.swift in Sources */,
 				2256E946203DEA2A0046B2CF /* MapViewController.swift in Sources */,

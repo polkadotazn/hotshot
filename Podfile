@@ -22,5 +22,7 @@ target 'HotShot' do
 	pod 'FirebaseUI'
     pod 'Firebase/Storage'
     pod 'FacebookLogin'
+	pod 'GoogleMaps'
+  	pod 'GooglePlaces'
 
 end
