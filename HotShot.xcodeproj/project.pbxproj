@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2256E944203D0CF70046B2CF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E943203D0CF70046B2CF /* ProfileViewController.swift */; };
+		2256E946203DEA2A0046B2CF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E945203DEA2A0046B2CF /* MapViewController.swift */; };
+		2256E948203DEA6B0046B2CF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E947203DEA6B0046B2CF /* CameraViewController.swift */; };
+		2256E94A203DEA8B0046B2CF /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E949203DEA8B0046B2CF /* ExploreViewController.swift */; };
 		2260FCAF203C94D80018E6EA /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCAA203C94D80018E6EA /* Search.png */; };
 		2260FCB0203C94D80018E6EA /* Feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCAB203C94D80018E6EA /* Feed.png */; };
 		2260FCB1203C94D80018E6EA /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2260FCAC203C94D80018E6EA /* Camera.png */; };
@@ -47,6 +51,10 @@
 
 /* Begin PBXFileReference section */
 		08DA80A33D8EBC72C5458747 /* Pods-HotShotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotShotTests/Pods-HotShotTests.release.xcconfig"; sourceTree = "<group>"; };
+		2256E943203D0CF70046B2CF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2256E945203DEA2A0046B2CF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2256E947203DEA6B0046B2CF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2256E949203DEA8B0046B2CF /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		2260FCAA203C94D80018E6EA /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Search.png; path = ../../../iphone_icons/Search.png; sourceTree = "<group>"; };
 		2260FCAB203C94D80018E6EA /* Feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Feed.png; path = ../../../iphone_icons/Feed.png; sourceTree = "<group>"; };
 		2260FCAC203C94D80018E6EA /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camera.png; path = ../../../iphone_icons/Camera.png; sourceTree = "<group>"; };
@@ -155,6 +163,10 @@
 				9E00F118203B96AD00F5088D /* LaunchScreen.storyboard */,
 				9E00F11B203B96AD00F5088D /* Info.plist */,
 				9E00F13D203B97EB00F5088D /* GoogleService-Info.plist */,
+				2256E943203D0CF70046B2CF /* ProfileViewController.swift */,
+				2256E945203DEA2A0046B2CF /* MapViewController.swift */,
+				2256E947203DEA6B0046B2CF /* CameraViewController.swift */,
+				2256E949203DEA8B0046B2CF /* ExploreViewController.swift */,
 			);
 			path = HotShot;
 			sourceTree = "<group>";
@@ -552,7 +564,11 @@
 			files = (
 				9E00F112203B96AD00F5088D /* ViewController.swift in Sources */,
 				2260FCB9203CAF350018E6EA /* FeedViewController.swift in Sources */,
+				2256E944203D0CF70046B2CF /* ProfileViewController.swift in Sources */,
+				2256E946203DEA2A0046B2CF /* MapViewController.swift in Sources */,
 				9E00F110203B96AD00F5088D /* AppDelegate.swift in Sources */,
+				2256E94A203DEA8B0046B2CF /* ExploreViewController.swift in Sources */,
+				2256E948203DEA6B0046B2CF /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

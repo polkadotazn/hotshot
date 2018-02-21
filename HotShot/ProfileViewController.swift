@@ -1,5 +1,5 @@
 //
-//  FeedViewController.swift
+//  ProfileViewController.swift
 //  HotShot
 //
 //  Created by Emmanuel Feygelson on 2/20/18.
@@ -7,26 +7,32 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class FeedViewController: UIViewController {
-    
+class ProfileViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let currentUser = Auth.auth().currentUser  {
+            // User is signed in.
+            
+            usernameLabel.text = currentUser.displayName
+            // ...
+        }
+
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    var isHot = true
     
+    @IBOutlet weak var usernameLabel: UILabel!
     
-    @IBAction func hotNewSelectorChanged(_ sender: UISegmentedControl) {
-        isHot = !isHot
-    }
-    
+
+ 
 
 }
