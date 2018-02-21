@@ -59,6 +59,7 @@
 		9E00F131203B96AD00F5088D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E00F13D203B97EB00F5088D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5F9A9B29BBB797F26DB202E /* Pods_HotShotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotShotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEECBA29203D1FB200D644C9 /* HotShot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HotShot.entitlements; sourceTree = "<group>"; };
 		E3846385970920AD28C5A86F /* Pods-HotShotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotShotTests/Pods-HotShotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9FDD8FE293BBF8D1FFAE49D /* Pods_HotShotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotShotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +117,7 @@
 		9E00F10E203B96AD00F5088D /* HotShot */ = {
 			isa = PBXGroup;
 			children = (
+				DEECBA29203D1FB200D644C9 /* HotShot.entitlements */,
 				9E00F10F203B96AD00F5088D /* AppDelegate.swift */,
 				9E00F111203B96AD00F5088D /* ViewController.swift */,
 				9E00F113203B96AD00F5088D /* Main.storyboard */,
@@ -246,6 +248,11 @@
 					9E00F10B203B96AD00F5088D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					9E00F11F203B96AD00F5088D = {
 						CreatedOnToolsVersion = 9.2;
@@ -683,6 +690,7 @@
 			baseConfigurationReference = 288189FF6FA63234F058FB13 /* Pods-HotShot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HotShot/HotShot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MSAYF369S3;
 				INFOPLIST_FILE = HotShot/Info.plist;
@@ -699,6 +707,7 @@
 			baseConfigurationReference = 8144611C4274571D2586B21F /* Pods-HotShot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HotShot/HotShot.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MSAYF369S3;
 				INFOPLIST_FILE = HotShot/Info.plist;

@@ -21,5 +21,6 @@ target 'HotShot' do
 	pod 'Firebase/Auth’
 	pod 'FirebaseUI'
     pod 'FacebookLogin'
+    pod 'Firebase/Storage'
 
 end

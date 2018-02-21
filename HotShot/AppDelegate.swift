@@ -22,13 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
+        
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
         fbAccessToken = AccessToken.current
+        
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        let handled: Bool = SDKApplicationDelegate.shared.application(UIapplication, open: url, options: options)
+        let handled: Bool = SDKApplicationDelegate.shared.application(app, open: url, options: options)
         
         return handled
     }
