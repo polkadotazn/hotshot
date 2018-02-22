@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import FBSDKLoginKit
+import FacebookLogin
 
 class ViewController: UIViewController {
 
@@ -45,6 +47,12 @@ class ViewController: UIViewController {
         emailError.isHidden = true
         passwordError.isHidden = true
         userPassError.isHidden = true
+        
+        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
+        view.addSubview(loginButton)
+        // frames are obsolete, use constraints instead
+        let newCenter = CGPoint(x: self.view.frame.width / 2, y: self.view.frame.height - 50)
+        loginButton.center = newCenter
     }
 
     override func didReceiveMemoryWarning() {
