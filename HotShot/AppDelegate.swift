@@ -8,8 +8,11 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 import GoogleMaps
 import GooglePlaces
+import FBSDKCoreKit
+import FacebookCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,8 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey(GoogleMapsKey123)
         GMSPlacesClient.provideAPIKey(GoogleMapsKey123)
+        SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         FirebaseApp.configure()
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let handled: Bool = SDKApplicationDelegate.shared.application(app, open: url, options:options)
+        // Add any custom logic here.
+        return handled
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
