@@ -10,9 +10,14 @@ import UIKit
 import FirebaseAuth
 import Firebase
 import FBSDKLoginKit
+import FacebookCore
 import FacebookLogin
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, LoginButtonDelegate {
+    func loginButtonDidLogOut(_ loginButton: LoginButton) {
+        
+    }
+    
 
     
     @IBOutlet weak var signInSelector: UISegmentedControl!
@@ -48,11 +53,32 @@ class ViewController: UIViewController {
         passwordError.isHidden = true
         userPassError.isHidden = true
         
-        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
-        view.addSubview(loginButton)
+        let fbLoginButton = LoginButton(readPermissions: [ .publicProfile, .email ])
+        view.addSubview(fbLoginButton)
         // frames are obsolete, use constraints instead
         let newCenter = CGPoint(x: self.view.frame.width / 2, y: self.view.frame.height - 50)
-        loginButton.center = newCenter
+        fbLoginButton.center = newCenter
+        
+        fbLoginButton.delegate = self as? LoginButtonDelegate
+    }
+    
+    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
+        switch result {
+        case .success:
+            let accessToken = AccessToken.current
+            guard let accessTokenString = accessToken?.authenticationToken else { return }
+            
+            let credentials = FacebookAuthProvider.credential(withAccessToken: accessTokenString)
+            Auth.auth().signIn(with: credentials, completion: { (user, error) in
+                if error != nil {
+                    print("Something went wrong with user: \(String(describing: error?.localizedDescription))")
+                    return
+                }
+                self.performSegue(withIdentifier: "goHome", sender: self)
+            })
+        default:
+            break
+        }
     }
 
     override func didReceiveMemoryWarning() {
