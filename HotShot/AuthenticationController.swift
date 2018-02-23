@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class ViewController: UIViewController {
+class AuthenticationController: UIViewController {
 
     
     @IBOutlet weak var signInSelector: UISegmentedControl!
@@ -35,6 +35,11 @@ class ViewController: UIViewController {
     
     
     var isSignIn:Bool = true
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
     
     
     override func viewDidLoad() {
