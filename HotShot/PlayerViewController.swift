@@ -1,6 +1,9 @@
 import Foundation
 import AVFoundation
 import UIKit
+import FirebaseStorage
+import FirebaseDatabase
+import FirebaseAuth
 
 /*
  KVO context used to differentiate KVO callbacks for this class versus other
@@ -9,7 +12,35 @@ import UIKit
 private var playerViewControllerKVOContext = 0
 
 class PlayerViewController: UIViewController {
-    // MARK: Properties
+//    // MARK: Properties
+//    @IBOutlet weak var textfield: UITextField!
+    @IBOutlet weak var textfield: UITextField!
+    
+    @IBAction func uploadVideo(_ sender: Any) {
+        print("action triggered")
+        let v = self.url.absoluteString
+        print(v)
+        var ref: DatabaseReference?
+        ref = Database.database().reference()
+        print(self.url.absoluteString)
+        let storageRef = Storage.storage().reference()
+        let mountainsRef = storageRef.child(NSUUID().uuidString)
+        let uploadTask = mountainsRef.putFile(from: self.url, metadata: nil) { metadata, error in
+            if let error = error {
+                // Uh-oh, an error occurred!
+                print("There was an error during the upload process")
+            } else {
+                print("Upload was a success")
+                ref?.child("videos").childByAutoId().setValue(["title": self.textfield.text, "user_id": Auth.auth().currentUser?.uid, "votes": 0])
+              
+                
+                // Metadata contains file metadata such as size, content-type, and download URL.
+                let downloadURL = metadata!.downloadURL()
+            }
+        }
+        
+    }
+    
     
     // Attempt load and test these asset keys before playing.
     static let assetKeysRequiredToPlay = [
