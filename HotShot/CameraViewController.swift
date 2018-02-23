@@ -26,6 +26,13 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
         print("VIEWDIDLOAD")
         // Disable UI. The UI is enabled if and only if the session starts running.
         cameraButton.isEnabled = false
+        cameraButton.isHidden = true
+        photoButton.isHidden = true
+        livePhotoModeButton.isHidden = true
+        captureModeControl.isHidden = true
+        depthDataDeliveryButton.isHidden = true
+        resumeButton.isHidden = true
+        cameraUnavailableLabel.isHidden = true 
         recordButton.isEnabled = false
         photoButton.isEnabled = false
         livePhotoModeButton.isEnabled = false
@@ -92,6 +99,36 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
                 self.session.startRunning()
                 self.isSessionRunning = self.session.isRunning
                 
+                let movieFileOutput = AVCaptureMovieFileOutput()
+                
+                if self.session.canAddOutput(movieFileOutput) {
+                    self.session.beginConfiguration()
+                    self.session.addOutput(movieFileOutput)
+                    self.session.sessionPreset = .high
+                    if let connection = movieFileOutput.connection(with: .video) {
+                        if connection.isVideoStabilizationSupported {
+                            connection.preferredVideoStabilizationMode = .auto
+                        }
+                    }
+                    self.session.commitConfiguration()
+                    
+                    DispatchQueue.main.async {
+                        self.captureModeControl.isEnabled = true
+                    }
+                    
+                    self.movieFileOutput = movieFileOutput
+                        
+                        DispatchQueue.main.async {
+                            self.recordButton.isEnabled = true
+                        }
+                    
+                }
+            
+            
+            
+            
+            
+            
             case .notAuthorized:
                 DispatchQueue.main.async {
                     let changePrivacySetting = "AVCam doesn't have permission to use the camera, please change privacy settings"
@@ -331,46 +368,47 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     @IBAction func toggleCaptureMode(_ captureModeControl: UISegmentedControl) {
         captureModeControl.isEnabled = false
         print("TOGGLE MODE")
-        if captureModeControl.selectedSegmentIndex == CaptureMode.photo.rawValue {
-            recordButton.isEnabled = true
-            
-            sessionQueue.async {
-                /*
-                 Remove the AVCaptureMovieFileOutput from the session because movie recording is
-                 not supported with AVCaptureSession.Preset.Photo. Additionally, Live Photo
-                 capture is not supported when an AVCaptureMovieFileOutput is connected to the session.
-                 */
-                self.session.beginConfiguration()
-                self.session.removeOutput(self.movieFileOutput!)
-                self.session.sessionPreset = .photo
-                
-                DispatchQueue.main.async {
-                    captureModeControl.isEnabled = true
-                }
-                
-                self.movieFileOutput = nil
-                
-                if self.photoOutput.isLivePhotoCaptureSupported {
-                    self.photoOutput.isLivePhotoCaptureEnabled = true
-                    
-                    DispatchQueue.main.async {
-                        self.livePhotoModeButton.isEnabled = true
-                        self.livePhotoModeButton.isHidden = false
-                    }
-                }
-                
-                if self.photoOutput.isDepthDataDeliverySupported {
-                    self.photoOutput.isDepthDataDeliveryEnabled = true
-                    
-                    DispatchQueue.main.async {
-                        self.depthDataDeliveryButton.isHidden = false
-                        self.depthDataDeliveryButton.isEnabled = true
-                    }
-                }
-                
-                self.session.commitConfiguration()
-            }
-        } else if captureModeControl.selectedSegmentIndex == CaptureMode.movie.rawValue {
+//        if captureModeControl.selectedSegmentIndex == CaptureMode.movie.rawValue {
+//            recordButton.isEnabled = true
+//
+//            sessionQueue.async {
+//                /*
+//                 Remove the AVCaptureMovieFileOutput from the session because movie recording is
+//                 not supported with AVCaptureSession.Preset.Photo. Additionally, Live Photo
+//                 capture is not supported when an AVCaptureMovieFileOutput is connected to the session.
+//                 */
+//                self.session.beginConfiguration()
+//                self.session.removeOutput(self.movieFileOutput!)
+//                self.session.sessionPreset = .photo
+//
+//                DispatchQueue.main.async {
+//                    captureModeControl.isEnabled = true
+//                }
+//
+//                self.movieFileOutput = nil
+//
+//                if self.photoOutput.isLivePhotoCaptureSupported {
+//                    self.photoOutput.isLivePhotoCaptureEnabled = true
+//
+//                    DispatchQueue.main.async {
+//                        self.livePhotoModeButton.isEnabled = true
+//                        self.livePhotoModeButton.isHidden = false
+//                    }
+//                }
+//
+//                if self.photoOutput.isDepthDataDeliverySupported {
+//                    self.photoOutput.isDepthDataDeliveryEnabled = true
+//
+//                    DispatchQueue.main.async {
+//                        self.depthDataDeliveryButton.isHidden = false
+//                        self.depthDataDeliveryButton.isEnabled = true
+//                    }
+//                }
+//
+//                self.session.commitConfiguration()
+//            }
+//        }
+     if captureModeControl.selectedSegmentIndex == CaptureMode.movie.rawValue {
             livePhotoModeButton.isHidden = true
             depthDataDeliveryButton.isHidden = true
             
