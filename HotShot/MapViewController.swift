@@ -41,17 +41,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate , GMSMapVie
         self.googleMapsView.isMyLocationEnabled = true
         self.googleMapsView.settings.myLocationButton = true
         
+        
         // Creates a marker in the center of the map.
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-//        marker.title = "Sydney"
-//        marker.snippet = "Australia"
-//        marker.map = mapView
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+        marker.title = "Sydney"
+        marker.snippet = "Australia"
+        marker.map = mapView
     }
     
     // MARK: CLLocation Manager Delegate
-    
-    
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error while get location \(error)")
@@ -81,7 +80,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate , GMSMapVie
         
     }
     
-    // AutoComplete
+    // MARK: GOOGLE AUTO COMPLETE DELEGATE
     
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         
@@ -100,6 +99,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate , GMSMapVie
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {
         self.dismiss(animated: true, completion: nil) // when cancel search
     }
+    
+    
     
     @IBAction func openSearchAddress(_ sender: UIBarButtonItem) {
         let autoCompleteController = GMSAutocompleteViewController()

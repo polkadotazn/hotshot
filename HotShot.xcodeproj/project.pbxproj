@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2201134B2041002400689BCB /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201134A2041002400689BCB /* Secrets.swift */; };
 		2256E944203D0CF70046B2CF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E943203D0CF70046B2CF /* ProfileViewController.swift */; };
 		2256E946203DEA2A0046B2CF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E945203DEA2A0046B2CF /* MapViewController.swift */; };
 		2256E948203DEA6B0046B2CF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256E947203DEA6B0046B2CF /* CameraViewController.swift */; };
@@ -19,7 +20,6 @@
 		22AC058A203DF7DB008EC7D0 /* Feed-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC0583203DF7DB008EC7D0 /* Feed-25.png */; };
 		22AC058B203DF7DB008EC7D0 /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC0584203DF7DB008EC7D0 /* Profile.png */; };
 		22AC058C203DF7DB008EC7D0 /* Search-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 22AC0585203DF7DB008EC7D0 /* Search-25.png */; };
-		5967DA29203E7E2600C04E6A /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967DA28203E7E2600C04E6A /* Secrets.swift */; };
 		5967DA2B203E869A00C04E6A /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967DA2A203E869A00C04E6A /* PlayerViewController.swift */; };
 		5967DA2D203E87D400C04E6A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967DA2C203E87D400C04E6A /* PreviewView.swift */; };
 		5967DA2F203E883900C04E6A /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967DA2E203E883900C04E6A /* PhotoCaptureDelegate.swift */; };
@@ -56,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		08DA80A33D8EBC72C5458747 /* Pods-HotShotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotShotTests/Pods-HotShotTests.release.xcconfig"; sourceTree = "<group>"; };
+		2201134A2041002400689BCB /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		2256E943203D0CF70046B2CF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2256E945203DEA2A0046B2CF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2256E947203DEA6B0046B2CF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		22AC0585203DF7DB008EC7D0 /* Search-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Search-25.png"; sourceTree = "<group>"; };
 		288189FF6FA63234F058FB13 /* Pods-HotShot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotShot/Pods-HotShot.debug.xcconfig"; sourceTree = "<group>"; };
 		3F45CE88CA1F7A67197934D6 /* Pods_HotShot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotShot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5967DA28203E7E2600C04E6A /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		5967DA2A203E869A00C04E6A /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		5967DA2C203E87D400C04E6A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		5967DA2E203E883900C04E6A /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				2256E945203DEA2A0046B2CF /* MapViewController.swift */,
 				2256E947203DEA6B0046B2CF /* CameraViewController.swift */,
 				2256E949203DEA8B0046B2CF /* ExploreViewController.swift */,
-				5967DA28203E7E2600C04E6A /* Secrets.swift */,
+				2201134A2041002400689BCB /* Secrets.swift */,
 			);
 			path = HotShot;
 			sourceTree = "<group>";
@@ -586,7 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E00F112203B96AD00F5088D /* AuthenticationController.swift in Sources */,
-				5967DA29203E7E2600C04E6A /* Secrets.swift in Sources */,
+				2201134B2041002400689BCB /* Secrets.swift in Sources */,
 				2260FCB9203CAF350018E6EA /* FeedViewController.swift in Sources */,
 				5967DA31203E8C0900C04E6A /* PlayerView.swift in Sources */,
 				2256E944203D0CF70046B2CF /* ProfileViewController.swift in Sources */,
