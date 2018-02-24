@@ -10,8 +10,10 @@ import UIKit
 import FirebaseStorage
 import FirebaseDatabase
 import FirebaseAuth
+import GoogleMaps
+import GooglePlaces
 
-class FeedViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+class FeedViewController: UIViewController, UITableViewDataSource,UITableViewDelegate, CLLocationManagerDelegate , GMSMapViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2;
@@ -27,12 +29,16 @@ class FeedViewController: UIViewController, UITableViewDataSource,UITableViewDel
     }
 
         
-    
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let storageRef = Storage.storage().reference()
-        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        locationManager.startMonitoringSignificantLocationChanges()
         
         
         let islandRef = storageRef.child("mountains.mov")
