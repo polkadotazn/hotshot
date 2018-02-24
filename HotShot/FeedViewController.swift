@@ -19,6 +19,7 @@ class FeedViewController: UIViewController, UITableViewDataSource,UITableViewDel
         return 2;
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell";
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier,for: indexPath)
@@ -27,6 +28,7 @@ class FeedViewController: UIViewController, UITableViewDataSource,UITableViewDel
         
         return cell;
     }
+    
 
         
     var locationManager = CLLocationManager()

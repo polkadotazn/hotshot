@@ -25,6 +25,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate , GMSMapVie
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        print("this is the location", locationManager.location)
         locationManager.startMonitoringSignificantLocationChanges()
         
         initGoogleMaps()
