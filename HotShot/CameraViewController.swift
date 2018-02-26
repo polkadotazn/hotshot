@@ -25,6 +25,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
         super.viewDidLoad()
         print("VIEWDIDLOAD")
         // Disable UI. The UI is enabled if and only if the session starts running.
+        self.tabBarController?.tabBar.isHidden = true 
         cameraButton.isEnabled = false
         cameraButton.isHidden = true
         photoButton.isHidden = true

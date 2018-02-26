@@ -24,18 +24,35 @@ class PlayerViewController: UIViewController {
         ref = Database.database().reference()
         print(self.url.absoluteString)
         let storageRef = Storage.storage().reference()
-        let mountainsRef = storageRef.child(NSUUID().uuidString)
+        let uniqueId = NSUUID().uuidString
+        let mountainsRef = storageRef.child(uniqueId)
         let uploadTask = mountainsRef.putFile(from: self.url, metadata: nil) { metadata, error in
             if let error = error {
                 // Uh-oh, an error occurred!
                 print("There was an error during the upload process")
             } else {
                 print("Upload was a success")
-                ref?.child("videos").childByAutoId().setValue(["title": self.textfield.text, "user_id": Auth.auth().currentUser?.uid, "votes": 0])
+                    mountainsRef.getMetadata { metadata, error in
+                        if let error = error {
+                            // Uh-oh, an error occurred!
+                        } else {
+                            print("METADATA")
+                            var metadata = metadata?.downloadURL()
+                            print(metadata!.absoluteString)
+                            ref?.child("videos").childByAutoId().setValue(["title": self.textfield.text, "user_id": Auth.auth().currentUser?.uid, "votes": 0, "url": metadata!.absoluteString, "name": uniqueId])
+                            
+                            
+                        }
+                
+             
+                        
+                }
+                
+              
               
                 
                 // Metadata contains file metadata such as size, content-type, and download URL.
-                let downloadURL = metadata!.downloadURL()
+               
             }
         }
         

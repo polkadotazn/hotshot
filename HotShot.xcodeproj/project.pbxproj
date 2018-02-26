@@ -24,6 +24,11 @@
 		5967DA2D203E87D400C04E6A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967DA2C203E87D400C04E6A /* PreviewView.swift */; };
 		5967DA2F203E883900C04E6A /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967DA2E203E883900C04E6A /* PhotoCaptureDelegate.swift */; };
 		5967DA31203E8C0900C04E6A /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5967DA30203E8C0900C04E6A /* PlayerView.swift */; };
+		59D27757204136D000E0D7FC /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D27756204136D000E0D7FC /* VideoCell.swift */; };
+		59D2775920422DFB00E0D7FC /* PlayerViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D2775820422DFB00E0D7FC /* PlayerViewClass.swift */; };
+		59D2775B204412C900E0D7FC /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D2775A204412C800E0D7FC /* down.png */; };
+		59D2775D204412D600E0D7FC /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D2775C204412D500E0D7FC /* down.png */; };
+		59D2775F204412F300E0D7FC /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D2775E204412F200E0D7FC /* up.png */; };
 		5A367B5B39DA9769141B03AE /* Pods_HotShotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FDD8FE293BBF8D1FFAE49D /* Pods_HotShotTests.framework */; };
 		6392AE36A907F4B9FE441379 /* Pods_HotShotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F9A9B29BBB797F26DB202E /* Pods_HotShotUITests.framework */; };
 		8EBB2249FA12CA2EA5301591 /* Pods_HotShot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F45CE88CA1F7A67197934D6 /* Pods_HotShot.framework */; };
@@ -75,6 +80,11 @@
 		5967DA2C203E87D400C04E6A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		5967DA2E203E883900C04E6A /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		5967DA30203E8C0900C04E6A /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		59D27756204136D000E0D7FC /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		59D2775820422DFB00E0D7FC /* PlayerViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewClass.swift; sourceTree = "<group>"; };
+		59D2775A204412C800E0D7FC /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		59D2775C204412D500E0D7FC /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down.png; path = ../down.png; sourceTree = "<group>"; };
+		59D2775E204412F200E0D7FC /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		8144611C4274571D2586B21F /* Pods-HotShot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShot.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotShot/Pods-HotShot.release.xcconfig"; sourceTree = "<group>"; };
 		89D4D560469E3135BA4FBAA7 /* Pods-HotShotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShotUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotShotUITests/Pods-HotShotUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96B6433CE45A55BD3FAA9551 /* Pods-HotShotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotShotUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotShotUITests/Pods-HotShotUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,9 +139,12 @@
 			isa = PBXGroup;
 			children = (
 				22AC0580203DF7DA008EC7D0 /* Camera.png */,
+				59D2775C204412D500E0D7FC /* down.png */,
 				22AC0583203DF7DB008EC7D0 /* Feed-25.png */,
 				22AC0581203DF7DA008EC7D0 /* Feed.png */,
+				59D2775E204412F200E0D7FC /* up.png */,
 				22AC0582203DF7DB008EC7D0 /* Map.png */,
+				59D2775A204412C800E0D7FC /* down.png */,
 				22AC0584203DF7DB008EC7D0 /* Profile.png */,
 				22AC0585203DF7DB008EC7D0 /* Search-25.png */,
 				22AC057F203DF7DA008EC7D0 /* Search.png */,
@@ -167,7 +180,9 @@
 				2260FCA9203C94890018E6EA /* IconImages */,
 				9E00F10F203B96AD00F5088D /* AppDelegate.swift */,
 				5967DA30203E8C0900C04E6A /* PlayerView.swift */,
+				59D2775820422DFB00E0D7FC /* PlayerViewClass.swift */,
 				9E00F111203B96AD00F5088D /* AuthenticationController.swift */,
+				59D27756204136D000E0D7FC /* VideoCell.swift */,
 				5967DA2A203E869A00C04E6A /* PlayerViewController.swift */,
 				5967DA2C203E87D400C04E6A /* PreviewView.swift */,
 				5967DA2E203E883900C04E6A /* PhotoCaptureDelegate.swift */,
@@ -343,9 +358,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D2775F204412F300E0D7FC /* up.png in Resources */,
 				22AC0589203DF7DB008EC7D0 /* Map.png in Resources */,
 				22AC058A203DF7DB008EC7D0 /* Feed-25.png in Resources */,
 				9E00F11A203B96AD00F5088D /* LaunchScreen.storyboard in Resources */,
+				59D2775D204412D600E0D7FC /* down.png in Resources */,
 				9E00F13E203B97EB00F5088D /* GoogleService-Info.plist in Resources */,
 				9E00F117203B96AD00F5088D /* Assets.xcassets in Resources */,
 				22AC0586203DF7DB008EC7D0 /* Search.png in Resources */,
@@ -354,6 +371,7 @@
 				22AC0588203DF7DB008EC7D0 /* Feed.png in Resources */,
 				9E00F115203B96AD00F5088D /* Main.storyboard in Resources */,
 				22AC058B203DF7DB008EC7D0 /* Profile.png in Resources */,
+				59D2775B204412C900E0D7FC /* down.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,11 +605,13 @@
 			files = (
 				9E00F112203B96AD00F5088D /* AuthenticationController.swift in Sources */,
 				5967DA29203E7E2600C04E6A /* Secrets.swift in Sources */,
+				59D2775920422DFB00E0D7FC /* PlayerViewClass.swift in Sources */,
 				2260FCB9203CAF350018E6EA /* FeedViewController.swift in Sources */,
 				5967DA31203E8C0900C04E6A /* PlayerView.swift in Sources */,
 				2256E944203D0CF70046B2CF /* ProfileViewController.swift in Sources */,
 				2256E946203DEA2A0046B2CF /* MapViewController.swift in Sources */,
 				5967DA2D203E87D400C04E6A /* PreviewView.swift in Sources */,
+				59D27757204136D000E0D7FC /* VideoCell.swift in Sources */,
 				5967DA2F203E883900C04E6A /* PhotoCaptureDelegate.swift in Sources */,
 				5967DA2B203E869A00C04E6A /* PlayerViewController.swift in Sources */,
 				9E00F110203B96AD00F5088D /* AppDelegate.swift in Sources */,
